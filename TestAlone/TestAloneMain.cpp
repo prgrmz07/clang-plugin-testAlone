@@ -176,7 +176,7 @@ int main() {
   clang::FrontendAction* Action = new MyASTFrontendAction();
 
   // 设置输入文件
-  CI.getFrontendOpts().Inputs.push_back(clang::FrontendInputFile("/pubx/clang-brc/test_in/test_main.cpp", clang::InputKind(clang::Language::CXX)));
+  CI.getFrontendOpts().Inputs.push_back(clang::FrontendInputFile("/pubx/clang-plugin-testAlone/test_in/test_main.cpp", clang::InputKind(clang::Language::CXX)));
 
   // 运行 Clang 编译
   if (!CI.ExecuteAction(*Action)) {
