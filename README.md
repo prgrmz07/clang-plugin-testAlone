@@ -20,22 +20,26 @@ file /llvm_release_home/clang+llvm-15.0.0-x86_64-linux-gnu-rhel-8.4/bin/clang-15
 
 ### build
 ```bash
+mkdir /pubx/ && cd /pubx/
+
 git clone https://github.com/prgrmz07/clang-plugin-testAlone.git
 cd clang-plugin-testAlone
+#pwd==/pubx/clang-plugin-testAlone/
 
 mkdir build && cd build
+#pwd==/pubx/clang-plugin-testAlone/build/
 cmake ..
 make
 
-file ./bin/TestAlone 
-#./bin/TestAlone: ELF 64-bit LSB pie executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=f66e023ccac00e1acce9c12e0c6fb278130527a8, for GNU/Linux 3.2.0, with debug_info, not stripped
+file  /pubx/clang-plugin-testAlone/bin/TestAlone 
+#/pubx/clang-plugin-testAlone/bin/TestAlone : ELF 64-bit LSB pie executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=f66e023ccac00e1acce9c12e0c6fb278130527a8, for GNU/Linux 3.2.0, with debug_info, not stripped
 
 ```
 
 ### run
 ```bash
 
-./bin/TestAlone 
+ /pubx/clang-plugin-testAlone/bin/TestAlone 
 """
 /pubx/clang-brc/test_in/test_main.cpp:10:19: warning: implicit conversion from 'double' to 'int' changes value from 0.001 to 0
 int MyClass::ZERO=0.001;
