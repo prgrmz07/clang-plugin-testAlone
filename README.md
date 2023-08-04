@@ -1,5 +1,7 @@
 # clang-plugin-testAlone
 
+>  clang+llvm15 plugin quick experiment
+
 
 ##  build and run
 
