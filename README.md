@@ -2,11 +2,12 @@
 
 >  clang+llvm15 plugin quick experiment
 
+> [gitee repo](https://gitee.com/pubz/clang-plugin-testAlone.git)
 
 ##  build and run
 
 ###  clang+llvm15 download
-[download llvm page](https://github.com/llvm/llvm-project/releases?page=2)
+
 ```bash
 mkdir /llvm_release_home/ && cd /llvm_release_home/
 wget https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.0/clang+llvm-15.0.0-x86_64-linux-gnu-rhel-8.4.tar.xz
